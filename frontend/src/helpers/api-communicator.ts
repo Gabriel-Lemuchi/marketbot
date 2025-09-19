@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "https://marketbot-backend.onrender.com/";
+axios.defaults.baseURL = "https://marketbot-backend.onrender.com/api/v1";
 axios.defaults.withCredentials = false;
 
 export default axios;
