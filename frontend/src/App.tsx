@@ -1,0 +1,25 @@
+import Header from "./components/Header";
+import { Routes, Route } from "react-router-dom"
+import Login from "./pages/Login"
+import Signup from "./pages/Signup"
+import Chat from "./pages/Chat"
+import NotFound from "./pages/NotFound"
+
+function App() {
+  return (
+    <>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+    </>
+  );
+}
+
+export default App;
