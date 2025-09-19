@@ -19,8 +19,8 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",        # Dev local
-        "https://marketbot-frontend.vercel.app"  # Produção (Vercel)
+        "http://localhost:5173",
+        "https://marketbot-frontend.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
