@@ -15,9 +15,13 @@ users = get_users_collection()
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 # Middleware de CORS
+# Middleware de CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # frontend
+    allow_origins=[
+        "http://localhost:5173",        # Dev local
+        "https://marketbot-frontend.vercel.app"  # Produção (Vercel)
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
