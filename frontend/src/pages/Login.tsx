@@ -4,7 +4,7 @@ import CustomizedInput from "../components/CustomizedInput";
 import axios from "axios"
 import toast from "react-hot-toast";
 import { useAuth } from "../context/AuthContext";
-axios.defaults.baseURL = "http://localhost:5000/api/v1"
+axios.defaults.baseURL = "https://marketbot-backend.onrender.com"
 axios.defaults.withCredentials = true
 
 const Login = () => {
